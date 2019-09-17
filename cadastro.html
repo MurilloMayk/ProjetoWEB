@@ -1,0 +1,359 @@
+<html>
+
+
+    <head>
+
+                <script src="public\js\jquery-3.3.1.slim.min.js"></script>
+                <script src="public\js\popper.min.js"></script>
+        
+                <!-- Bootstrap v4.3-->
+                <link rel="stylesheet" href="public/bootstrap/css/bootstrap.min.css"/>
+                <script src="public\bootstrap\js\bootstrap.min.js" ></script>
+                
+                <!-- Font Awesome-->
+                <link rel="stylesheet" href="public\fontawesome\css\all.css" />
+        
+                <link rel="stylesheet" href="public\estilo.css"/>
+                <script src="public\script.js"></script>
+        
+    </head>
+
+    <body>
+
+        <!-- HEADER-->
+        <div id="wrapper-header">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <!-- LOGO -->
+                    <div class="col col-lg-2">
+                        <a id="logo" href="#">
+                            <img src="public/img/cl_logo.png" alt="Logomrca" />
+                        </a>
+                    </div>
+
+                    <!-- NAV -->
+                    <div class="col-lg-8">
+
+                        <!-- SEARCH FORM-->
+                        <div class="row">
+
+                            <div class="col">
+                                <form id="search-form">
+                                    <div class="input-group">
+                                            <input type="text" class="form-control">
+                                            <div class="input-group-append">
+                                              <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+                                            </div>
+                                          </div>
+
+                                </form>
+
+                            </div>
+                        </div>
+
+                        <!-- NAVIGATION-->
+                        <div class="row">
+                            <div class="col">
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="index.html">Home</a>
+                                    </li>
+                                    <!--<li class="nav-item">
+                                        <a class="nav-link" href="#">Campeonatos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Ligas</a>
+                                    </li>-->
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          Campeonatos
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                                <a class="dropdown-item" href="futebol.html">Futebol</a>
+                                          <a class="dropdown-item" href="#">Campeonato 2</a>
+                                          <a class="dropdown-item" href="#">Campeonato 3</a>
+                                        </div>
+                                      </li>
+                                      <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          Ligas
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                          <a class="dropdown-item" href="#">Liga 1</a>
+                                          <a class="dropdown-item" href="#">Liga 2</a>
+                                          <a class="dropdown-item" href="#">Liga 3</a>
+                                        </div>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="#">Ajuda</a>
+                                    </li>
+                                    <!--<li class="nav-item">
+                                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                    </li>-->
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <!-- ACTIONS-->
+                    <div id="header-actions" class="col col-lg-2">
+
+                        <div class="row">
+
+                            <div class="col">
+                                <a id="cart" href="#">
+                                    <img src="public\img\cart.png" alt="Carrinho de compras" />
+                                </a>
+                            </div>
+                            
+                            <div class="col">
+                                <a id="user" href="cadastro.html">
+                                    <img src="public\img\male-user.png" alt="Usuário"/>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container register">
+            <div class="row">
+                <div class="col-md-3 register-left">
+                    <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+                    <h3>BEM VINDO</h3>
+                    <p>Conclua seu cadastro</p>
+                    <input type="submit" name="" value="Login"/><br/>
+                </div>
+                <div class="col-md-9 register-right">
+                    <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <h3 class="register-heading">Cadastro de Usuário</h3>
+                            <div class="row register-form">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Nome *" value="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Sobre Nome *" value="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" placeholder="Password *" value="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="Senha *"  placeholder="Confirmar Senha *" value="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="maxl">
+                                            <label class="radio inline"> 
+                                                <input type="radio" name="gender" value="Masculino" checked>
+                                                <span> Masculino </span> 
+                                            </label>
+                                            <label class="radio inline"> 
+                                                <input type="radio" name="gender" value="Feminino">
+                                                <span>Feminino </span> 
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Email *" value="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Telefone *" value="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option class="hidden"  selected disabled>Pergunta de segurança</option>
+                                            <option>Qual sua data de nascimento?</option>
+                                            <option>Qual o nome da sua mãe?</option>
+                                            <option>Qual o nome do seu cachorro?</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Digite sua resposta *" value="" />
+                                    </div>
+                                    <input type="submit" class="btnRegister"  value="Cadastrar"/>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <h3  class="register-heading">Apply as a Hirer</h3>
+                            <div class="row register-form">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="First Name *" value="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Last Name *" value="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Email *" value="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" maxlength="10" minlength="10" class="form-control" placeholder="Phone *" value="" />
+                                    </div>
+
+
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" placeholder="Password *" value="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" placeholder="Confirm Password *" value="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option class="hidden"  selected disabled>Please select your Sequrity Question</option>
+                                            <option>What is your Birthdate?</option>
+                                            <option>What is Your old Phone Number</option>
+                                            <option>What is your Pet Name?</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="`Answer *" value="" />
+                                    </div>
+                                    <input type="submit" class="btnRegister"  value="Register"/>
+                                </div>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER-->
+        <div id="wrapper-footer">
+                <div class="container">
+                                <!-- Footer -->
+                <footer class="page-footer font-small indigo">
+    
+                        <!-- Footer Links -->
+                        <div class="container">
+                    
+                        <!-- Grid row-->
+                        <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+                    
+                            <!-- Grid column -->
+                            <div class="col-md-2 mb-3">
+                            <h6 class="text-uppercase font-weight-bold">
+                                <a href="#!">Home</a>
+                            </h6>
+                            </div>
+                            <!-- Grid column -->
+                    
+                            <!-- Grid column -->
+                            <div class="col-md-2 mb-3">
+                            <h6 class="text-uppercase font-weight-bold">
+                                <a href="#!">Campeonatos</a>
+                            </h6>
+                            </div>
+                            <!-- Grid column -->
+                    
+                            <!-- Grid column -->
+                            <div class="col-md-2 mb-3">
+                            <h6 class="text-uppercase font-weight-bold">
+                                <a href="#!">Ligas</a>
+                            </h6>
+                            </div>
+                            <!-- Grid column -->
+                    
+                            <!-- Grid column -->
+                            <div class="col-md-2 mb-3">
+                            <h6 class="text-uppercase font-weight-bold">
+                                <a href="#!">Ajuda</a>
+                            </h6>
+                            </div>
+                            <!-- Grid column -->
+                    
+                            <!-- Grid column -->
+                            <div class="col-md-2 mb-3">
+                            <h6 class="text-uppercase font-weight-bold">
+                                <a href="cadastro.html">Registre-se</a>
+                                
+                            </h6>
+                            </div>
+                            <!-- Grid column -->
+                    
+                        </div>
+                        <!-- Grid row-->
+                        <hr class="rgba-white-light" style="margin: 0 15%;">
+                    
+                        <!-- Grid row-->
+                        <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+                    
+                            <!-- Grid column -->
+                            <div class="col-md-8 col-12 mt-5">
+                            <p style="line-height: 1.7rem">Novo Site Web EuEsporte</p>
+                            </div>
+                            <!-- Grid column -->
+                    
+                        </div>
+                        <!-- Grid row-->
+                        <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+                    
+                        <!-- Grid row-->
+                        <div class="row pb-3">
+                    
+                            <!-- Grid column -->
+                            <div class="col-md-12">
+                    
+                            <div class="mb-5 text-center">
+                    
+                                <!-- Facebook -->
+                                <a class="fb-ic">
+                                <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
+                                </a>
+                                <!-- Twitter -->
+                                <a class="tw-ic">
+                                <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
+                                </a>
+                                <!-- Google +-->
+                                <a class="gplus-ic">
+                                <i class="fab fa-google-plus-g fa-lg white-text mr-4"> </i>
+                                </a>
+                                <!--Linkedin -->
+                                <a class="li-ic">
+                                <i class="fab fa-linkedin-in fa-lg white-text mr-4"> </i>
+                                </a>
+                                <!--Instagram-->
+                                <a class="ins-ic">
+                                <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
+                                </a>
+                                <!--Pinterest-->
+                                <a class="pin-ic">
+                                <i class="fab fa-pinterest fa-lg white-text"> </i>
+                                </a>
+                    
+                            </div>
+                    
+                            </div>
+                            <!-- Grid column -->
+                    
+                        </div>
+                        <!-- Grid row-->
+                    
+                        </div>
+                        <!-- Footer Links -->
+                    
+                        <!-- Copyright -->
+                        <div class="footer-copyright text-center py-3">© 2019 Copyright
+                        <!--<a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>-->
+                        </div>
+                        <!-- Copyright -->
+                    
+                    </footer>
+                    <!-- Footer -->
+                </div>
+            </div>
+       
+    </body>
+
+</html>
